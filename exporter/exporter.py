@@ -77,6 +77,9 @@ class ScholarExporter(object):
                                               url=self.url,
                                               date=date.today().isoformat()))
 
+            self.parsed_papers = sorted(self.parsed_papers, key=lambda paper: (paper['n_citations']), reverse=False)
+            self.parsed_papers = sorted(self.parsed_papers, key=lambda paper: (paper['year']), reverse=True)
+
             for paper in self.parsed_papers:
                 html_file.write(paper_template.format(**paper))
 

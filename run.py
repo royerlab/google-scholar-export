@@ -25,7 +25,7 @@ s.export('ahmetcansolak.html')
 s = ScholarExporter.from_user('NV6MuzkAAAAJ')
 s.export('shruthivijaykumar.html')
 #
-# # Luke Hyman:
-# s = ScholarExporter.from_user('?')  # Loic A Royer user
-# s.export('lukehyman.html')
+# Luke Hyman:
+s = ScholarExporter.from_user('UtGLTF8AAAAJ')
+s.export('lukejhyman.html')
 
